@@ -15,6 +15,7 @@ module.exports = {
   },
 
   getPath: function(alias) {
+    if (!alias) return root;
     return aliases[alias];
   },
 
