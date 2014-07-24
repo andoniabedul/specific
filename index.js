@@ -23,7 +23,7 @@ module.exports = {
     aliases[alias] = directory;
     var wrapper = this.require;
     this.require[alias] = function(filepath) {
-      return wrapper(path.resolve(directory, filepath || ''));
+      return wrapper(path.resolve(root, directory, filepath || ''));
     }
   }
 }
