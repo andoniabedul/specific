@@ -1,8 +1,10 @@
 {
   "name": "specific",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Ultra-tiny path resolution",
-  "author": "Manuel de la Higuera <mhiguera@gmail.com",
+  "author": {
+    "name": "Manuel de la Higuera"
+  },
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -16,5 +18,15 @@
     "resolution",
     "tiny"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "3c1388def15cfc4b3d0da7681705470c26a3c61b",
+  "bugs": {
+    "url": "https://github.com/mhiguera/specific/issues"
+  },
+  "readme": "ERROR: No README data found!",
+  "homepage": "https://github.com/mhiguera/specific",
+  "_id": "specific@0.0.1",
+  "scripts": {},
+  "_shasum": "cfde80500202ce8227d5394ec0ed85b94157d9fa",
+  "_from": "specific@*"
 }
