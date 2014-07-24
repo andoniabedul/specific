@@ -1,0 +1,20 @@
+{
+  "name": "specific",
+  "version": "0.0.1",
+  "description": "Ultra-tiny path resolution",
+  "author": "Manuel de la Higuera <mhiguera@gmail.com",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mhiguera/specific.git"
+  },
+  "engines": [
+    "node >=0.8.0"
+  ],
+  "keywords": [
+    "path",
+    "resolution",
+    "tiny"
+  ],
+  "license": "MIT",
+}
