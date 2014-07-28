@@ -1,6 +1,6 @@
 var contextPath,
     aliases = {},
-    path = require('path');
+    path = require('path'),
     current = __dirname,
     root = path.resolve(current, '../..');
 
