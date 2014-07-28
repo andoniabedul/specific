@@ -1,4 +1,5 @@
 var contextPath,
+    cargo = {},
     aliases = {},
     path = require('path'),
     current = __dirname,
@@ -7,6 +8,14 @@ var contextPath,
 module.exports = {
   require: function(filepath) {
     return require(path.resolve(root, filepath));
+  },
+
+  set: function(varName, info) {
+    cargo[varName] = info;
+  },
+
+  get: function(varName) {
+    return cargo[varName];
   },
 
   setContextPath: function(r) {
