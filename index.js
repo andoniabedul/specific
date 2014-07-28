@@ -14,9 +14,8 @@ module.exports = {
     root = path.resolve(root, r);
   },
 
-  getPath: function(alias) {
-    if (!alias) return root;
-    return aliases[alias];
+  getPath: function(directory) {
+    return path.resolve(root, directory || '');
   },
 
   addPath: function(alias, directory) {
@@ -24,6 +23,10 @@ module.exports = {
     var wrapper = this.require;
     this.require[alias] = function(filepath) {
       return wrapper(path.resolve(root, directory, filepath || ''));
+    }
+
+    this.getPath[alias] = function(filepath) {
+      return path.resolve(root, directory, filepath || '');
     }
   }
 }
